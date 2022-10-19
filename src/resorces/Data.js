@@ -2,27 +2,27 @@ export const menu = [
     {
         id: 1,
         link: "plan",
-        path: "/Plan"
+        path: "omni-tech/Plan"
     }, 
     {
         id: 2,
         link: "projects",
-        path: "/Projects"
+        path: "omni-tech/Projects"
     }, 
     {
         id: 3,
         link: "offer",
-        path: "/Offer"
+        path: "omni-tech/Offer"
     }, 
     {
         id: 4,
         link: "about",
-        path: "/Aboute"
+        path: "omni-tech/Aboute"
     }, 
     {
         id: 5,
         link: "contact",
-        path: "/Contact"
+        path: "omni-tech/Contact"
     }, 
 ]
 

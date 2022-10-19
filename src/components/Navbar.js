@@ -6,7 +6,7 @@ const Navbar = () => {
     const [nav, setnav] = useState(false)
   return (
     <div className='fixed flex justify-between left-0 right-0 items-center h-24 px-10 bg-blue text-white'>
-      <a href="/"><img className='h-18 w-24 cursor-pointer' src={logoImg} alt="logo"/></a>
+      <a href="/omni-tech"><img className='h-18 w-24 cursor-pointer' src={logoImg} alt="logo"/></a>
         <div className='items-center hidden md:flex'>
         <ul className='hidden md:flex'>
           {menu.map(({id, link, path})=>(
