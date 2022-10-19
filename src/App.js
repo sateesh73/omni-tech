@@ -17,14 +17,14 @@ function App() {
        <Navbar/>
        <BrowserRouter>
        <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/Aboute" element={<Aboute/>}/>
-        <Route path="Contact" element={<Contact/>}/>
-        <Route path="/Plan" element={<Plan/>}/>
-        <Route path="/Projects" element={<Projects/>}/>
-        <Route path="/Offer" element={<Offer/>}/>
-        <Route path="/Login" element={<Login/>}/>
-        <Route path="/*" element={<Error/>}/>
+        <Route path="/omni-tech" element={<Home/>}/>
+        <Route path="omni-tech/Aboute" element={<Aboute/>}/>
+        <Route path="omni-tech/Contact" element={<Contact/>}/>
+        <Route path="omni-tech/Plan" element={<Plan/>}/>
+        <Route path="omni-tech/Projects" element={<Projects/>}/>
+        <Route path="omni-tech/Offer" element={<Offer/>}/>
+        <Route path="omni-tech/Login" element={<Login/>}/>
+        <Route path="omni-tech/*" element={<Error/>}/>
        </Routes>
        </BrowserRouter>
       <Footer/>
