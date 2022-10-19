@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/omni-tech/static/css/main.62badab4.css",
-    "main.js": "/omni-tech/static/js/main.64bb4c84.js",
+    "main.js": "/omni-tech/static/js/main.9b6a709f.js",
     "static/media/IntroCardSateesh.png": "/omni-tech/static/media/IntroCardSateesh.eb04b880b64a6ddedff1.png",
     "static/media/IntroCardSachin.png": "/omni-tech/static/media/IntroCardSachin.b597aca0a3770425fc6b.png",
     "static/media/hero3.jpg": "/omni-tech/static/media/hero3.0a4893421f4eb80a395c.jpg",
@@ -10,10 +10,10 @@
     "static/media/logoOmniWhite.png": "/omni-tech/static/media/logoOmniWhite.7d355cce6ea11095075a.png",
     "index.html": "/omni-tech/index.html",
     "main.62badab4.css.map": "/omni-tech/static/css/main.62badab4.css.map",
-    "main.64bb4c84.js.map": "/omni-tech/static/js/main.64bb4c84.js.map"
+    "main.9b6a709f.js.map": "/omni-tech/static/js/main.9b6a709f.js.map"
   },
   "entrypoints": [
     "static/css/main.62badab4.css",
-    "static/js/main.64bb4c84.js"
+    "static/js/main.9b6a709f.js"
   ]
 }
