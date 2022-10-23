@@ -8,15 +8,15 @@ const BussinessCard = () => {
     <div className='shadow-2xl px-4 lg:px-20 bg-blue text-white'>
         <div className='flex flex-col justify-between items-center lg:flex-row'>
             <div className='w-full lg:w-[480px]'>
-                <h1 className=' font-extrabold text-[3rem]'>Get Your </h1>
-                <h1 className='font-extrabold text-[3rem] text-red'>Bussiness</h1>
+                <h1 className=' font-extrabold lg:text-[3rem] text-[2rem]'>Get Your </h1>
+                <h1 className='font-extrabold lg:text-[3rem] text-[2rem] text-red'>Bussiness</h1>
                 <div className='flex flex-row items-center'>
-                <h1 className=' font-extrabold text-[3rem]'>Online</h1>
+                <h1 className=' font-extrabold lg:text-[3rem] text-[2rem]'>Online</h1>
                 <FaArrowRight className='text-red m-4' size={30}/>
             </div>
             <h1 className='py-4 font-medium'><span className='text-red'>OMNITECH</span> is a digital marketing and a website designing company with highly qualified professionals.</h1>
             <div className='flex flex-col items-center gap-1 cursor-pointer lg:gap-6 lg:flex-row'>
-                <button className='bg-white text-black hover:bg-red hover:text-white flex flex-row items-center justify-center'><AiOutlineWhatsApp size={30} className='text-green'/> WHATSPP US</button>
+                <button className='bg-white text-black hover:bg-red hover:text-white flex flex-row items-center justify-center'><AiOutlineWhatsApp size={30} className='text-green'/> WHATSAPP US</button>
                 <SocialMedia classItem='flex items-center gap-1 cursor-pointer'
                 faceUrl="https://www.facebook.com/" 
                 instaUrl="https://www.instagram.com/"

@@ -12,19 +12,20 @@ import Navbar from "./components/Navbar";
 import Login from "./pages/Login";
 
 function App() {
+  
   return (
     <div className="">
        <Navbar/>
-       <BrowserRouter>
+       <BrowserRouter basename="/omni-tech">
        <Routes>
-        <Route path="/omni-tech" element={<Home/>}/>
-        <Route path="omni-tech/Aboute" element={<Aboute/>}/>
-        <Route path="omni-tech/Contact" element={<Contact/>}/>
-        <Route path="omni-tech/Plan" element={<Plan/>}/>
-        <Route path="omni-tech/Projects" element={<Projects/>}/>
-        <Route path="omni-tech/Offer" element={<Offer/>}/>
-        <Route path="omni-tech/Login" element={<Login/>}/>
-        <Route path="omni-tech/*" element={<Error/>}/>
+        <Route exact path="/" element={<Home/>}/>
+        <Route exact path="/Contact" element={<Contact/>}/>
+        <Route exact path="/Plan" element={<Plan/>}/>
+        <Route exact path="/Projects" element={<Projects/>}/>
+        <Route exact path="/Offer" element={<Offer/>}/>
+        <Route exact path="/Login" element={<Login/>}/>
+        <Route exact path="/Aboute" element={<Aboute/>}/>
+        <Route path="/*" element={<Error/>}/>
        </Routes>
        </BrowserRouter>
       <Footer/>
