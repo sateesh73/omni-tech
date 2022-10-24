@@ -1,23 +1,24 @@
 import React from 'react'
 import { TiTick } from 'react-icons/ti'
+import { planDetails } from '../resorces/Data'
 
 const PlanCard = () => {
   return (
-    <div className='px-5 py-5 border-2 flex flex-col items-center hover:scale-105 duration-300 hover:shadow-2xl'>
-        <h1 className='font-semibold text-[2rem] text-center'>Bronze Website Package</h1>
-        <h1 className='font-medium text-center'>One Page Website</h1>
-        <h1 className='font-bold text-[3rem] text-center'>₹24,999</h1>
-        <button className='bg-black text-white hover:bg-red'>Get Offer</button>
-        <ul className='py-10'>
-            <li><h1 className='flex flex-row font-medium'><TiTick size={20} className='text-green'/> 7 Pages Business Website</h1></li>
-            <li><h1 className='flex flex-row font-medium'><TiTick size={20} className='text-green'/> Customized Design</h1></li>
-            <li><h1 className='flex flex-row font-medium'><TiTick size={20} className='text-green'/> Free Hosting 1 Year </h1></li>
-            <li><h1 className='flex flex-row font-medium'><TiTick size={20} className='text-green'/> SEO Ready Website </h1></li>
-            <li><h1 className='flex flex-row font-medium'><TiTick size={20} className='text-green'/> Free Business E-Mail</h1></li>
-            <li><h1 className='flex flex-row font-medium'><TiTick size={20} className='text-green'/> SSL Certificate </h1></li>
-            <li><h1 className='flex flex-row font-medium'><TiTick size={20} className='text-green'/> Responsive Design</h1></li>
-            <li><h1 className='flex flex-row font-medium'><TiTick size={20} className='text-green'/> Contact Form</h1></li>
-        </ul>
+    <div className='grid grid-cols-1 gap-8 pt-10 lg:grid-cols-3'>
+        {planDetails.map(plan=>(
+          <div key={plan.id} className=" border-[3px] border-slate rounded-2xl shadow-lg p-8 relative hover:border-red">
+            <h1 className='text-[2rem] font-semibold text-center'>{plan.title}</h1>
+            {plan.mostpopular && <p className='absolute top-0 -translate-y-1/2 bg-red font-semibold tracking-wide text-white px-2 py-1 rounded-full shadow-md'>Most Popular</p>}
+            <p className='font-medium text-center leading-5'>{plan.description}</p>
+            <p className='font-medium text-center'>₹<span className='text-[1.5rem] font-bold shadow-md rounded-full'>{plan.price}</span>/mo</p>
+            <ul className='py-10'>
+              {plan.feature.map(feature=>(
+                <li key={feature}><h1 className='flex flex-row font-medium'><TiTick size={20} className='text-green'/>{feature}</h1></li>
+              ))}
+            </ul>
+           <a href="/omni-tech/contact" className='flex justify-center'><button className='border-[3px] border-slate bg-transparent text-black hover:bg-red hover:text-white absolute bottom-5'>Get Offer</button></a>
+          </div>
+        ))}
     </div>
   )
 }

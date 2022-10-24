@@ -6,7 +6,7 @@ const Navbar = () => {
     const [nav, setnav] = useState(false)
 
   return (
-    <div className='fixed flex justify-between left-0 right-0 items-center h-24 px-10 bg-blue text-white'>
+    <div className='absolute flex justify-between left-0 right-0 items-center h-24 px-10 bg-blue text-white'>
       <a href="/omni-tech"><img className='h-18 w-24 cursor-pointer' src={logoImg} alt="logo"/></a>
         <div className='items-center hidden md:flex'>
         <ul className='hidden md:flex'>
@@ -24,9 +24,9 @@ const Navbar = () => {
               {nav ? <FaTimes size={30}/>:  <FaBars size={30}/>}
             </div>
             {
-            nav ?  <ul className='fixed flex flex-col justify-center items-center top-20 left-0 right-0 cursor-pointer bg-blue min-h-screen'>
+            nav ?  <ul className='absolute flex flex-col justify-center items-center cursor-pointer bg-blue top-24 right-0'>
               {menu.map(({id, link, path})=>(
-            <li key={id} className='px-4 py-6 cursor-pointer capitalize font-medium text-lg hover:scale-105 duration-200 hover:text-red'>
+            <li key={id} className='px-20 py-6 cursor-pointer capitalize font-medium text-lg hover:scale-105 duration-200 hover:text-red'>
                     <a href={path}>{link}</a>
                 </li> 
               ))}

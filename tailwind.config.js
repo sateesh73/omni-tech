@@ -12,6 +12,7 @@ module.exports = {
       'primery': '#673de6',
       'green': "#00b67a",
       'gray': "#cbc9ca" ,
+      'slate': "#c0d0e0",
       'transparent': '#FFFFFF00'    
     },
     extend: {},
