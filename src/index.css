@@ -17,7 +17,3 @@
 button{
   @apply rounded-full w-[250px] h-10 font-semibold  hover:scale-105 duration-200
 }
-
-.topmargin{
-  @apply pt-24
-}

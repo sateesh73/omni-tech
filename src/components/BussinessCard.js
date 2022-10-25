@@ -1,5 +1,4 @@
 import React from 'react'
-import { AiOutlineWhatsApp } from 'react-icons/ai'
 import {FaArrowRight} from "react-icons/fa"
 import heroImg from "../resorces/photo/logoOmniWhite.png"
 import SocialMedia from './SocialMedia'
@@ -16,7 +15,7 @@ const BussinessCard = () => {
             </div>
             <h1 className='py-4 font-medium'><span className='text-red'>OMNITECH</span> is a digital marketing and a website designing company with highly qualified professionals.</h1>
             <div className='flex flex-col items-center gap-1 cursor-pointer lg:gap-6 lg:flex-row'>
-                <button className='bg-white text-black hover:bg-red hover:text-white flex flex-row items-center justify-center'><AiOutlineWhatsApp size={30} className='text-green'/> WHATSAPP US</button>
+                <a href='/omni-tech/Contact'><button className='bg-white text-black hover:bg-red hover:text-white'>CONTACT US</button></a>
                 <SocialMedia classItem='flex items-center gap-1 cursor-pointer'
                 faceUrl="https://www.facebook.com/" 
                 instaUrl="https://www.instagram.com/"

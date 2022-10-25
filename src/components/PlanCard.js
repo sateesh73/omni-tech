@@ -4,9 +4,9 @@ import { planDetails } from '../resorces/Data'
 
 const PlanCard = () => {
   return (
-    <div className='grid grid-cols-1 gap-8 pt-10 lg:grid-cols-3'>
+    <div className='grid grid-cols-1 gap-10 pt-10 lg:grid-cols-3'>
         {planDetails.map(plan=>(
-          <div key={plan.id} className=" border-[3px] border-slate rounded-2xl shadow-lg p-8 relative hover:border-red">
+          <div key={plan.id} className=" border-[3px] border-slate rounded-2xl p-8 relative  hover:border-red hover:scale-105 duration-500 hover:shadow-2xl">
             <h1 className='text-[2rem] font-semibold text-center'>{plan.title}</h1>
             {plan.mostpopular && <p className='absolute top-0 -translate-y-1/2 bg-red font-semibold tracking-wide text-white px-2 py-1 rounded-full shadow-md'>Most Popular</p>}
             <p className='font-medium text-center leading-5'>{plan.description}</p>

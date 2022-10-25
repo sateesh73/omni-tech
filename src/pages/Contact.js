@@ -6,6 +6,7 @@ import {contactDetails} from "../resorces/Data"
 import emailjs from "@emailjs/browser"
 
 const Contact = () => {
+  const [sendmessage, setsendmessage] = useState(false);
   const [input, setinput] = useState({
     name:"",
     email:"",
@@ -26,8 +27,10 @@ const Contact = () => {
     e.preventDefault();
     emailjs.sendForm('service_jfm6q3h', 'template_codbguj', e.target, 'ncxLyKJaBXezMuzfF')
       .then((result) => {
+        setsendmessage(true);
           console.log(result.text);
       }, (error) => {
+        setsendmessage(false);
           console.log(error.text);
       });
       
@@ -84,8 +87,9 @@ const Contact = () => {
             </div>
           </form>
         </div>
-        <div className='px-5 bg-black text-white rounded-2xl lg:rounded-l-none shadow-2xl'>
+        <div className=' relative px-5 bg-black text-white rounded-2xl lg:rounded-l-none shadow-2xl'>
           <h1 className='font-semibold text-2xl py-5'>Contact information</h1>
+          {sendmessage && <span className=' absolute top-0 right-0 -translate-y-1/2 text-black font-semibold border rounded-md bg-red'>Send message Succesfully</span>}
           <p className='text-gray font-light'>We are open to any suggestion or just to have a chat</p>
           <div className='py-7 px-6 flex flex-col'>
             <div className='flex flex-col gap-6 py-6 lg:flex-row'>
@@ -106,6 +110,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
+        
       </div>
     </div>
   )
