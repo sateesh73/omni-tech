@@ -5,27 +5,31 @@ import { AiOutlineStock } from "react-icons/ai"
 import { DiTechcrunch } from "react-icons/di"
 import { MdDesignServices , MdSpeed} from "react-icons/md"
 import { RiCustomerService2Fill } from "react-icons/ri"
+import Plan from "../pages/Plan"
+import Projects from "../pages/Projects"
+import Service from "../pages/Service"
+import Aboute from "../pages/Aboute"
 
 export const menu = [
     {
         id: 1,
         link: "plan",
-        path: "/Plan"
+        path: <Plan/>
     }, 
     {
         id: 2,
         link: "projects",
-        path: "/Projects"
+        path: <Projects/>
     }, 
     {
         id: 3,
         link: "service",
-        path: "/Service"
+        path: <Service/>
     }, 
     {
         id: 4,
         link: "about",
-        path: "/Aboute"
+        path: <Aboute/>
     },  
 ]
 

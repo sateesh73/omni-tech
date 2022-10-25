@@ -5,6 +5,8 @@ import BussinessCard from "../components/BussinessCard"
 import PlanCard from '../components/PlanCard'
 import Aboute from './Aboute'
 import ServiceDetails from '../components/ServiceDetails'
+import { Link } from 'react-router-dom'
+import Plan from './Plan'
 
 const Home = () => {
   return (
@@ -12,7 +14,7 @@ const Home = () => {
           <div className='px-10 lg:px-20 flex flex-col lg:flex-row'>
             <div className='py-10 lg:px-20 lg:w-1/2'>
               <h1 className='text-[2rem] lg:text-[3.5rem] font-extrabold uppercase'>GET A <span className='text-red'>PROFESSIONAL WEBSITE </span>FOR YOUR BUSINESS</h1>
-              <a href='/Plan'><button className='bg-black text-white hover:bg-red'>Get Offer</button></a>
+              <Link to={<Plan/>}><button className='bg-black text-white hover:bg-red'>Get Offer</button></Link>
               <h1 className='py-6 flex flex-row font-medium'><TiTick size={20} className='text-green'/> Get exclusive 30-day money-back guarantee</h1>
             </div>
             <div className='lg:w-1/2 py-10'>

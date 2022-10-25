@@ -1,6 +1,8 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import ChoseUs from '../components/ChoseUs'
 import ServiceDetails from '../components/ServiceDetails'
+import Contact from './Contact'
 
 
 const Service = () => {
@@ -11,7 +13,7 @@ const Service = () => {
       <ServiceDetails/>
       <div className='flex flex-col lg:flex-row justify-between border-[3px] shadow-xl px-5 py-5'>
         <h1 className='font-bold lg:text-lg text-center'>Don’t Waste Your Time, Bring Your Business Online</h1>
-        <a href='/Contact'><button className=' bg-blue text-white hover:bg-red w-fit px-4 text-sm'>CREATE YOUR DIGITAL FOOTPRINT TODAY</button></a>
+        <Link to={<Contact/>}><button className=' bg-blue text-white hover:bg-red w-fit px-4 text-sm'>CREATE YOUR DIGITAL FOOTPRINT TODAY</button></Link>
       </div>
       <ChoseUs/>
     </div>
