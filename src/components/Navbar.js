@@ -7,7 +7,7 @@ const Navbar = () => {
 
   return (
     <div className='fixed flex justify-between top-0 left-0 w-screen z-[100] shadow-2xl items-center h-24 px-10 bg-blue text-white'>
-      <a href="/omni-tech"><img className='h-18 w-24 cursor-pointer' src={logoImg} alt="logo"/></a>
+      <a href="/"><img className='h-18 w-24 cursor-pointer' src={logoImg} alt="logo"/></a>
         <div className='items-center hidden md:flex'>
         <ul className='hidden md:flex'>
           {menu.map(({id, link, path})=>(
@@ -17,7 +17,7 @@ const Navbar = () => {
           ))}
         </ul>
         <button className='bg-white text-black hover:bg-red hover:text-white w-[150px]'>
-          <a href='/omni-tech/Contact'>Contact Us</a>
+          <a href='/Contact'>Contact Us</a>
         </button>
         </div>
             <div onClick={()=>setnav(!nav)} className=' pr-2 cursor-pointer md:hidden'>

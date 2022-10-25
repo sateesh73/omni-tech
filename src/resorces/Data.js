@@ -10,22 +10,22 @@ export const menu = [
     {
         id: 1,
         link: "plan",
-        path: "omni-tech/Plan"
+        path: "/Plan"
     }, 
     {
         id: 2,
         link: "projects",
-        path: "omni-tech/Projects"
+        path: "/Projects"
     }, 
     {
         id: 3,
         link: "service",
-        path: "omni-tech/Service"
+        path: "/Service"
     }, 
     {
         id: 4,
         link: "about",
-        path: "omni-tech/Aboute"
+        path: "/Aboute"
     },  
 ]
 

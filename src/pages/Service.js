@@ -11,7 +11,7 @@ const Service = () => {
       <ServiceDetails/>
       <div className='flex flex-col lg:flex-row justify-between border-[3px] shadow-xl px-5 py-5'>
         <h1 className='font-bold lg:text-lg text-center'>Don’t Waste Your Time, Bring Your Business Online</h1>
-        <a href='/omni-tech/Contact'><button className=' bg-blue text-white hover:bg-red w-fit px-4 text-sm'>CREATE YOUR DIGITAL FOOTPRINT TODAY</button></a>
+        <a href='/Contact'><button className=' bg-blue text-white hover:bg-red w-fit px-4 text-sm'>CREATE YOUR DIGITAL FOOTPRINT TODAY</button></a>
       </div>
       <ChoseUs/>
     </div>

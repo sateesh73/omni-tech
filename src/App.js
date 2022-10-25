@@ -17,14 +17,14 @@ function App() {
   return (
     <div className="">
        <Navbar/>
-       <BrowserRouter basename="/omni-tech">
+       <BrowserRouter>
        <Routes>
         <Route exact path="/" element={<Home/>}/>
-        <Route exact path="/Contact" element={<Contact/>}/>
-        <Route exact path="/Plan" element={<Plan/>}/>
-        <Route exact path="/Projects" element={<Projects/>}/>
-        <Route exact path="/Service" element={<Service/>}/>
-        <Route exact path="/Aboute" element={<Aboute/>}/>
+        <Route path="/Contact" element={<Contact/>}/>
+        <Route path="/Plan" element={<Plan/>}/>
+        <Route path="/Projects" element={<Projects/>}/>
+        <Route path="/Service" element={<Service/>}/>
+        <Route path="/Aboute" element={<Aboute/>}/>
         <Route path="/*" element={<Error/>}/>
        </Routes>
        </BrowserRouter>
