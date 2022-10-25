@@ -15,9 +15,8 @@ import Service from "./pages/Service";
 function App() {
   
   return (
-    <div className="">
+    <BrowserRouter>
        <Navbar/>
-       <BrowserRouter>
        <Routes>
         <Route exact path="/" element={<Home/>}/>
         <Route path="/Contact" element={<Contact/>}/>
@@ -27,11 +26,10 @@ function App() {
         <Route path="/Aboute" element={<Aboute/>}/>
         <Route path="/*" element={<Error/>}/>
        </Routes>
-       </BrowserRouter>
        <ScrollToTop/>
        <Whatsapp/>
       <Footer/>
-    </div>
+    </BrowserRouter>
   );
 }
 
