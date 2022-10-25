@@ -29,7 +29,7 @@ const Navbar = () => {
             nav ?  <ul className='absolute flex flex-col justify-center items-center cursor-pointer bg-blue top-24 right-0'>
               {menu.map(({id, link, path})=>(
             <li key={id} className='px-20 py-6 cursor-pointer capitalize font-medium text-lg hover:scale-105 duration-200 hover:text-red'>
-                    <a href={path}>{link}</a>
+                    <Link to={path}>{link}</Link>
                 </li> 
               ))}
             </ul>: ""
