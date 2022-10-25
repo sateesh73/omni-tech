@@ -1,5 +1,6 @@
 import React from 'react'
 import { TiTick } from 'react-icons/ti'
+import { Link } from 'react-router-dom'
 import { planDetails } from '../resorces/Data'
 
 const PlanCard = () => {
@@ -16,7 +17,7 @@ const PlanCard = () => {
                 <li key={feature}><h1 className='flex flex-row font-medium'><TiTick size={20} className='text-green'/>{feature}</h1></li>
               ))}
             </ul>
-           <a href="/Contact" className='flex justify-center'><button className='border-[3px] border-slate bg-transparent text-black hover:bg-red hover:text-white absolute bottom-5'>Get Offer</button></a>
+           <Link to="/Contact" className='flex justify-center'><button className='border-[3px] border-slate bg-transparent text-black hover:bg-red hover:text-white absolute bottom-5'>Get Offer</button></Link>
           </div>
         ))}
     </div>

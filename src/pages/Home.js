@@ -6,7 +6,6 @@ import PlanCard from '../components/PlanCard'
 import Aboute from './Aboute'
 import ServiceDetails from '../components/ServiceDetails'
 import { Link } from 'react-router-dom'
-import Plan from './Plan'
 
 const Home = () => {
   return (
