@@ -1,5 +1,6 @@
 import React from 'react'
 import {FaArrowRight} from "react-icons/fa"
+import { Link } from 'react-router-dom'
 import heroImg from "../resorces/photo/logoOmniWhite.png"
 import SocialMedia from './SocialMedia'
 const BussinessCard = () => {
@@ -15,7 +16,7 @@ const BussinessCard = () => {
             </div>
             <h1 className='py-4 font-medium'><span className='text-red'>OMNITECH</span> is a digital marketing and a website designing company with highly qualified professionals.</h1>
             <div className='flex flex-col items-center gap-1 cursor-pointer lg:gap-6 lg:flex-row'>
-                <a href='/Contact'><button className='bg-white text-black hover:bg-red hover:text-white'>CONTACT US</button></a>
+                <Link to="/Contact"><button className='bg-white text-black hover:bg-red hover:text-white'>CONTACT US</button></Link>
                 <SocialMedia classItem='flex items-center gap-1 cursor-pointer'
                 faceUrl="https://www.facebook.com/" 
                 instaUrl="https://www.instagram.com/"
